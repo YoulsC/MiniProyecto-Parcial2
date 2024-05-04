@@ -7,7 +7,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Labrador Retriever',
       tiempo: '2 años en el refugio',
       comportamiento: 'Amigable y juguetón',
-      img: 'assets/img/labrador.jpg'
+      img: 'assets/img/labrador.png'
     },
     {
       edad: 2,
@@ -15,7 +15,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Siamés',
       tiempo: '1 año en el refugio',
       comportamiento: 'Curioso y afectuoso',
-      img: 'assets/img/siames.jpg'
+      img: 'assets/img/siames.png'
     },
     {
       edad: 5,
@@ -23,7 +23,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Bulldog Francés',
       tiempo: '4 años en el refugio',
       comportamiento: 'Cariñoso y tranquilo',
-      img: 'assets/img/bulldog.jpg'
+      img: 'assets/img/bulldog.png'
     },
     {
       edad: 1,
@@ -31,7 +31,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Persa',
       tiempo: '6 meses en el refugio',
       comportamiento: 'Mimoso y tranquilo',
-      img: 'assets/img/persa.jpg'
+      img: 'assets/img/persa.png'
     },
     {
       edad: 4,
@@ -39,7 +39,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Golden Retriever',
       tiempo: '3 años en el refugio',
       comportamiento: 'Leal y enérgico',
-      img: 'assets/img/golden.jpg'
+      img: 'assets/img/goldenretriever.png'
     },
     {
       edad: 2,
@@ -47,7 +47,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Border Collie',
       tiempo: '2 años en el refugio',
       comportamiento: 'Inteligente y activo',
-      img: 'assets/img/border-collie.jpg'
+      img: 'assets/img/bordercollie.png'
     },
     {
       edad: 6,
@@ -55,7 +55,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Maine Coon',
       tiempo: '5 años en el refugio',
       comportamiento: 'Sociable y cariñoso',
-      img: 'assets/img/maine-coon.jpg'
+      img: 'assets/img/maineCoon.png'
     },
     {
       edad: 3,
@@ -63,7 +63,7 @@ export const ANIMALES: Animal[] = [
       raza: 'British Shorthair',
       tiempo: '2 años en el refugio',
       comportamiento: 'Relajado y amigable',
-      img: 'assets/img/british-shorthair.jpg'
+      img: 'assets/img/britishShorthair.png'
     },
     {
       edad: 4,
@@ -71,7 +71,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Beagle',
       tiempo: '3 años en el refugio',
       comportamiento: 'Alegre y dócil',
-      img: 'assets/img/beagle.jpg'
+      img: 'assets/img/beagle.png'
     },
     {
       edad: 2,
@@ -79,7 +79,7 @@ export const ANIMALES: Animal[] = [
       raza: 'Calicó',
       tiempo: '1 año en el refugio',
       comportamiento: 'Juguetón y afectuoso',
-      img: 'assets/img/calico.jpg'
+      img: 'assets/img/calico.png'
     }
   ];
   
