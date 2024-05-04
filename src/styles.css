@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #dacdba;
+    background-image: url('./assets/media/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
