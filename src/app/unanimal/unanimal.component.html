@@ -1,0 +1,22 @@
+<h1 class="animate__animated animate__bounce">{{animal.raza}}</h1>
+<hr>
+<div class="row animated fadeIn fast">
+    <div class="col md-4 text-center">
+        <img width="300px" src="{{animal.img}}" alt="" class="img-fluid">
+        <br><br>
+        <a [routerLink]="['/animales']" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+
+    <div class="col md-8">
+        <h3>{{animal.raza}}</h3>
+        <hr>
+        <p>
+            {{animal.comportamiento}}
+        </p>
+        <p>
+            {{animal.tiempo}}
+        </p>
+    </div>
+</div>
+
+<app-alta-cliente></app-alta-cliente>
