@@ -5,12 +5,13 @@ import { HomeComponent } from './home/home.component';
 import { AcercaComponent } from './acerca/acerca.component';
 import { DonadoresComponent } from './donadores/donadores.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HomeComponent, AcercaComponent, DonadoresComponent, NosotrosComponent, RouterModule],
+  imports: [RouterOutlet, HeaderComponent, HomeComponent, AcercaComponent, DonadoresComponent, NosotrosComponent, RouterModule, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

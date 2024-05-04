@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-xl navbar-light  " style="background-color: #18708c;">
     <a class="navbar-brand" href="#">
-      <img src="../../assets/media/Logo.png" width="100%" height="100" alt="">
+      <img src="../../assets/media/Logo.png" width="40%" height="auto" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,12 +24,18 @@
       <!-- <form class="form-inline my-2 my-lg-0 d-flex justify-content-end" style=" gap: 10px;">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-      </form> -->
+      </form> (Julio)-->
 
-      <div id="busconombre" class="form-inline my-2 my-lg-0 d-flex justify-content-end" style=" gap: 10px;">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" #buscarTexto (keyup.enter)="buscarUnNombre(buscarTexto.value)">
-        <button class="btn btn-outline-success my-2 my-sm-0" (click)="buscarUnNombre(buscarTexto.value)" type="button">Search</button>
-      </div>
+      <!-- <div id="busconombre" class="form-inline my-2 my-lg-0 d-flex justify-content-end" style=" gap: 10px;">
+        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search" #buscarTexto (keyup.enter)="buscarUnNombre(buscarTexto.value)">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="buscarUnNombre(buscarTexto.value)" type="button">Buscar</button>
+      </div> (Aaron)-->
+
+
+      <div id="busconombre" class="form-inline my-2 my-lg-0 search-container d-flex justify-content-end" style=" gap: 10px;">
+        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search" #buscarTexto (keyup.enter)="buscarUnNombre(buscarTexto.value)">
+        <button class="btn btn-outline-info my-2 my-sm-0 search-button" (click)="buscarUnNombre(buscarTexto.value)" type="button">Buscar</button>
+    </div>
     </div>
   </nav>
 
