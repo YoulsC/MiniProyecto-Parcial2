@@ -21,10 +21,15 @@
           <a class="nav-link " href="#" routerLink="/donadores" routerLinkActive="active">Donadores</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 d-flex justify-content-end" style=" gap: 10px;">
+      <!-- <form class="form-inline my-2 my-lg-0 d-flex justify-content-end" style=" gap: 10px;">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
+      </form> -->
+
+      <div id="busconombre" class="form-inline my-2 my-lg-0 d-flex justify-content-end" style=" gap: 10px;">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" #buscarTexto (keyup.enter)="buscarUnNombre(buscarTexto.value)">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="buscarUnNombre(buscarTexto.value)" type="button">Search</button>
+      </div>
     </div>
   </nav>
 

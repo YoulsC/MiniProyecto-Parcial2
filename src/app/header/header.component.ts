@@ -14,5 +14,9 @@ import { DonadoresComponent } from '../donadores/donadores.component';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  constructor(private router: Router) { }
 
+  buscarUnNombre (nombre: string) {
+    this.router.navigate(['/buscador', nombre]);
+  }
 }
