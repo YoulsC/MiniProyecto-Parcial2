@@ -29,6 +29,7 @@
     "ngx-material-timepicker": "^13.1.1",
     "primeicons": "^7.0.0",
     "primeng": "^17.16.0",
+    "run-parallel": "^1.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
