@@ -4,12 +4,17 @@
   <form (ngSubmit)="nuevoCliente()" #clienteForm="ngForm">
     <p>
       <span>Nombre:</span>
-      <input type="text" class="form-control bg-dark text-white" [(ngModel)]="cliente.nombre" name="nombre" required>
+      <input type="text" class="form-control bg-secondary text-white" [(ngModel)]="cliente.nombre" name="nombre" required>
+    </p>
+
+    <p>
+      <span>Apellido:</span>
+      <input type="text" class="form-control bg-secondary text-white" [(ngModel)]="cliente.apellido" name="apellido" required>
     </p>
 
     <p>
       <span>Teléfono:</span>
-      <input type="text" class="form-control bg-dark text-white" [(ngModel)]="cliente.telefono" name="telefono" required>
+      <input type="text" class="form-control bg-secondary text-white" [(ngModel)]="cliente.telefono" name="telefono" required>
     </p>
 
     <p>
@@ -18,7 +23,7 @@
 
     <p>
       <span>Selecciona una hora:</span>
-      <select name="hora" class="form-control bg-dark text-white" [(ngModel)]="horaSeleccionada">
+      <select name="hora" class="form-control bg-secondary text-white" [(ngModel)]="horaSeleccionada">
         @for (hora of horasDisponibles; track hora) {
           <option [value]="hora" [disabled]="horasDeshabilitadas.includes(hora)">
             {{ hora }}:00

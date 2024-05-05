@@ -16,7 +16,7 @@
 }
 
 .title2 {
-  color: rgb(29, 139, 163);;
+  color: rgb(29, 139, 163);
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px rgba(155, 155, 155, 0.5);
     font-family: "Lilita One", sans-serif;
@@ -41,13 +41,10 @@
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
-    background-color: rgb(29, 139, 163);
   }
   
   .cards {
     display: flex;
-    background-color: rgb(29, 139, 163);
-    
   }
 
   .example-card {

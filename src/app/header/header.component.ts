@@ -6,19 +6,22 @@ import { DonadoresComponent } from '../donadores/donadores.component';
 import { TipsComponent } from '../tips/tips.component';
 import {MatIconModule} from '@angular/material/icon';
 import { AnimalesComponent } from '../animales/animales.component';
+import { BusquedaService } from '../busqueda.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HomeComponent, AcercaComponent, DonadoresComponent, TipsComponent, RouterModule, MatIconModule, AnimalesComponent],
+  imports: [ RouterOutlet, HeaderComponent, HomeComponent, AcercaComponent, DonadoresComponent, TipsComponent, RouterModule, MatIconModule, AnimalesComponent],
   
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
-  constructor(private router: Router) { }
 
-  buscarUnNombre (nombre: string) {
+export class HeaderComponent {
+  constructor(private router: Router, private busquedaService: BusquedaService) { }
+
+  nombreBusqueda(nombre: string) {
+    this.busquedaService.cambiarNombre(nombre);
     this.router.navigate(['/buscador', nombre]);
   }
 }
