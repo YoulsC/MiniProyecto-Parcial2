@@ -1,7 +1,7 @@
 
 
     
-    <div class="part1">
+    <div class="part1" [ngStyle]="centrar">
         <img src="../../assets/media/Logo.png" alt="" class="logo">
 
         <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"> "Los latidos del corazón se entrelazan
@@ -12,7 +12,7 @@
     <div class="part2">
 
         <div class="div1">
-            <h2 style="color: #18708c;">¡Encuentra tu compañero peludo en nuestro refugio de amor!</h2>
+            <h2 [ngStyle]="{color: colorBase}">¡Encuentra tu compañero peludo en nuestro refugio de amor!</h2>
             <hr>
             <h4>Bienvenido a nuestro refugio, donde cada latido cuenta una historia de esperanza y amor. Aquí,
                 encontrarás más que una mascota: descubrirás un amigo leal que llenará tu vida de alegría y

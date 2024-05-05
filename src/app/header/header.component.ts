@@ -7,11 +7,12 @@ import { TipsComponent } from '../tips/tips.component';
 import {MatIconModule} from '@angular/material/icon';
 import { AnimalesComponent } from '../animales/animales.component';
 import { BusquedaService } from '../busqueda.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ RouterOutlet, HeaderComponent, HomeComponent, AcercaComponent, DonadoresComponent, TipsComponent, RouterModule, MatIconModule, AnimalesComponent],
+  imports: [ RouterOutlet, HeaderComponent, HomeComponent, AcercaComponent, DonadoresComponent, TipsComponent, RouterModule, MatIconModule, AnimalesComponent, CommonModule],
   
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
@@ -24,4 +25,8 @@ export class HeaderComponent {
     this.busquedaService.cambiarNombre(nombre);
     this.router.navigate(['/buscador', nombre]);
   }
+
+  colorBase = '#18708c';
+
+  
 }
