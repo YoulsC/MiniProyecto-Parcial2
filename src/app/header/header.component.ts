@@ -5,11 +5,12 @@ import { AcercaComponent } from '../acerca/acerca.component';
 import { DonadoresComponent } from '../donadores/donadores.component';
 import { TipsComponent } from '../tips/tips.component';
 import {MatIconModule} from '@angular/material/icon';
+import { AnimalesComponent } from '../animales/animales.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HomeComponent, AcercaComponent, DonadoresComponent, TipsComponent, RouterModule, MatIconModule],
+  imports: [RouterOutlet, HeaderComponent, HomeComponent, AcercaComponent, DonadoresComponent, TipsComponent, RouterModule, MatIconModule, AnimalesComponent],
   
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
