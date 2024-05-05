@@ -1,9 +1,10 @@
 export interface Cliente {
     id: number;
-    fecha: Date;
+    fecha: string;
     hora: number;
     nombre: string;
     telefono: string;
+    animal: Animal;
 }
 
 export interface Animal{

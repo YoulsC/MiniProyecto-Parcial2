@@ -30,10 +30,18 @@ export class ClientesService {
   nuevoCliente(){
     return {
       id: this.clientes.length,
-      fecha: new Date(),
+      fecha: '',
       hora: 0,
       nombre: '',
       telefono: '',
+      animal: {
+        edad: 0,
+        color: '',
+        raza: '',
+        tiempo: '',
+        comportamiento: '',
+        img: ''
+      }
     }
   }
 }

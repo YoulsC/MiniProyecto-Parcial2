@@ -5,4 +5,5 @@ export interface Animal{
     tiempo: string;
     comportamiento: string;
     img: string;
+    tipo: string;
 }
