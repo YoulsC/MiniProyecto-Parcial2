@@ -3,6 +3,7 @@ export interface Cliente {
     fecha: string;
     hora: number;
     nombre: string;
+    apellido: string;
     telefono: string;
     animal: Animal;
 }

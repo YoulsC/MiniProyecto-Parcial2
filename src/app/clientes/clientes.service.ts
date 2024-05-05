@@ -7,6 +7,8 @@ import { ANIMALES } from '../misanimales';
 })
 export class ClientesService {
 
+  
+
   clientes!: Cliente[];
   animal: Animal[] = ANIMALES
 
@@ -27,12 +29,20 @@ export class ClientesService {
     localStorage.setItem('data', JSON.stringify(this.clientes));
   }
 
+  getCitasPorNombre(nombre: string): Cliente[] {
+    console.log(nombre);
+    const citas = JSON.parse(localStorage.getItem('data') ?? '') || [];
+    console.log(citas);
+    return citas.filter((citas: { nombre: string; apellido: string; }) => citas.nombre === nombre || citas.apellido === nombre);
+  }
+
   nuevoCliente(){
     return {
       id: this.clientes.length,
       fecha: '',
       hora: 0,
       nombre: '',
+      apellido: '',
       telefono: '',
       animal: {
         edad: 0,
