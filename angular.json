@@ -25,13 +25,16 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
-                "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+                "node_modules/bootstrap/dist/js/bootstrap.min.js",
+                "src/assets/js/0c5cf4a4b8.js"
+            
+              ]
           },
           "configurations": {
             "production": {
