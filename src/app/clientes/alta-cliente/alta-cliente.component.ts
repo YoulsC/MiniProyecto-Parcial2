@@ -39,6 +39,7 @@ export class AltaClienteComponent {
       this.cliente.hora = this.horaSeleccionada;
       this.clientesService.agregarCliente(this.cliente);
       this.cliente = this.clientesService.nuevoCliente();
+      window.location.reload();
     }
 
     onDateChange(date: Date | undefined) {
