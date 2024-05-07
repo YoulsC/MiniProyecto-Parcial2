@@ -7,6 +7,7 @@ import { combineLatest } from 'rxjs';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-search',
@@ -25,13 +26,20 @@ throw new Error('Method not implemented.');
   constructor(
     private route: ActivatedRoute,
     private clientesService: ClientesService,
-    private busquedaService: BusquedaService
+    private busquedaService: BusquedaService,
+    private snackBar: MatSnackBar
   ) { }
 
   ngOnInit(): void {
     combineLatest([this.route.queryParams, this.busquedaService.nombreActual]).subscribe(([params, nombreBusqueda]) => {
       const nombre = params['nombre'] || nombreBusqueda;
       this.citas = this.clientesService.getCitasPorNombre(nombre);
+
+      if (this.citas.length === 0) {
+        this.snackBar.open('No se encontraron resultados para la búsqueda', 'Cerrar', {
+          duration: 2000,  // Duración en milisegundos después de la cual el snackbar se cerrará automáticamente
+        });
+      }1  
     });
   }
 }
