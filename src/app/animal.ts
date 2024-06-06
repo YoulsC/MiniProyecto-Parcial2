@@ -6,4 +6,5 @@ export interface Animal{
     comportamiento: string;
     img: string;
     tipo: string;
+    //Hola mundo
 }
